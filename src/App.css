@@ -1,0 +1,63 @@
+.App{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    font-size: 20px;
+    padding: 1rem;
+    background-color: white;
+    max-width: 500px;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 10px #0008;
+}
+
+.card__icon{
+    font-size: 2rem;
+    float: left;
+    padding-right: 1rem;
+}
+.card__quote{
+    margin-bottom: 1rem;
+}
+
+.card__author{
+    text-align: end;
+    margin-bottom: 1rem;
+}
+
+.card__button{
+    cursor: pointer;
+    color: white;
+    display: block;
+    margin-left: auto;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;  
+    box-shadow: 0 0 2px #0008;   
+}
+
+.card__button:hover{
+    box-shadow: 0 0 10px #0009;
+    transform: scale(1.05);
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+
+@media (max-width: 530px) {
+
+    .App{
+        padding: 2rem;      
+}
+
+}
+
+@media (max-width: 420px) {
+
+.card{ 
+    font-size: 14px;
+}
+}
